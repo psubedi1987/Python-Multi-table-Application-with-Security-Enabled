@@ -1,0 +1,15 @@
+{% extends "crm/base.html" %}
+{% block content %}Create an Account
+{% load crispy_forms_tags %}
+
+
+
+   <h1> Register</h1>
+    <from method ="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Register</button>
+
+    </from>
+{% endblock %}
+
