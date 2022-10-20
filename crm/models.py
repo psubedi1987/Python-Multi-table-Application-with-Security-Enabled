@@ -16,7 +16,7 @@ class Customer(models.Model):
     organization = models.CharField(max_length=100)
     role = models.CharField(max_length=100)
 
-    def __str__ (self):
+    def __str__(self):
         return self.cust_name
 
 class Service(models.Model):
